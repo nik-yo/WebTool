@@ -85,7 +85,7 @@ Resources:
       DomainName: webtool.nikkiyodo.com
       DomainValidationOptions:
         - DomainName: webtool.nikkiyodo.com
-          HostedZoneId: !ImportValue AsyloSoftHostedZoneId
+          HostedZoneId: !ImportValue NikkiYodoHostedZoneId
       ValidationMethod: DNS
  
   WebToolRecordSet:
@@ -94,7 +94,7 @@ Resources:
       AliasTarget: 
         DNSName: !GetAtt WebToolCloudFrontDistribution.DomainName
         HostedZoneId: Z2FDTNDATAQYW2
-      HostedZoneId: !ImportValue AsyloSoftHostedZoneId
+      HostedZoneId: !ImportValue NikkiYodoHostedZoneId
       Name: webtool.nikkiyodo.com
       Type: A
 
