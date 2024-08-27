@@ -3,7 +3,7 @@ Resources:
   WebToolS3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: nikyo-webtool
+      BucketName: webtool-nikkiyodo-app
       PublicAccessBlockConfiguration:
         BlockPublicAcls: false
         BlockPublicPolicy: false
